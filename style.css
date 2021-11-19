@@ -1,0 +1,162 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-size: 25px;
+    height: 95vh;
+    width: 95vw;
+}
+.openingPage {
+    height: 300px;
+    background: #d6d6d6;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    justify-content: center;
+    margin:auto;
+    margin-top: 75px;
+    border-radius: 50px;
+    position: relative;
+}
+#userImage {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+.textInputs {
+    background-color:#d6d6d6;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: 0;
+    padding-left: 0px;
+    color: #ECF0F5;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 5px;
+}
+input {
+    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
+input[type=text] {
+    margin-top: 30px;   
+}
+.formDiv {
+    margin-bottom: 30px;
+    outline: 0px;
+}
+.textInputs:focus {
+    border-bottom: 3px solid #919191;
+}
+.formLabel {
+    font-size: 15px;
+    color: #6C6C6C;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#start {
+    border-color: #6C6C6C;
+    color: #6C6C6C;
+    background-color: #d6d6d6;;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(221, 219, 219, 0.24);
+    font-size: 17px;    
+}
+.buttonDiv {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+#start:hover {
+    background-color: #6C6C6C;
+    color: #ffffff;
+    cursor: pointer;
+}
+#board {
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+#board div {
+    height: 150px;
+    width: 150px;
+}
+.left {
+    border-right: 4px solid white;
+    box-sizing: border-box;
+}
+.right {
+    border-left: 4px solid white;
+    box-sizing: border-box;
+}
+.top {
+    border-bottom: 4px solid white;
+    box-sizing: border-box;
+}
+.bottom {
+    border-top: 4px solid white;
+    box-sizing: border-box;
+}
+.square {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+svg {
+    opacity: 0.6;
+}
+.win {
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    100% {
+            opacity: 1;
+    }
+    30% {
+            opacity: 0;
+    }
+}
+#result {
+    width: 450px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    display: none;
+}
+.playerName {
+    color: white;
+    margin: auto;
+}
+.score {
+    color: white;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 35px;
+}
+span {
+    color: white;
+    margin: auto;
+}
+.playerScore {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#notice {
+    font-size: 10px;
+    color: white;
+    height: 30px;
+}
+#timer {
+    color: white;
+    position:absolute;
+    font-size: 30px;
+    left: 50px;
+    top: 58px;
+}

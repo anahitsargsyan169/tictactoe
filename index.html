@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+        <div class="openingPage">
+            <div>
+            <!--    <img id="singleMode" src="user.png" />-->
+                <img id="userImage" src="users.png" />
+            </div>
+            <form>
+                <div class="formDiv">
+                    <label for="first" class="formLabel">Player 1:</label>
+                        <input type="text" id="first" placeholder="Enter first player name" class="textInputs">
+                </div>
+                <div class="formDiv">
+                    <label for="second" class="formLabel">Player 2:</label>
+                        <input type="text" id="second" placeholder="Enter second player name" class="textInputs">
+                </div>
+                <div class="buttonDiv">
+                    <input type="button" id="start" value="PLAY">
+                </div>
+            </form>
+        </div>
+        <div id= "board">
+            <div id = "1" class = "square top left"></div>
+            <div id = "2" class = "square top center"></div>
+            <div id = "3" class = "square top right"></div>
+            <div id = "4" class = "square center left"></div>
+            <div id = "5" class = "square center"></div>
+            <div id = "6" class = "square center right"></div>
+            <div id = "7" class = "square bottom left"></div>
+            <div id = "8" class = "square bottom center"></div>
+            <div id = "9" class = "square bottom right"></div>
+        </div>
+        <div id = result>
+            <span id= "firstPlayer" class="playerScore">
+                <span class="playerName">Player 1 (X)</span>
+                <span class="score">0</span>
+            </span>
+            <span style="font-size: 50px;">-</span>
+            <span id= "secondPlayer"  class="playerScore">
+                <span class="playerName">Player 2 (O)</span>
+                <span class="score">0</span>
+            </span>
+            
+        </div>
+        <div id = "notice"></div>
+        
+</body>
+<script src="script.js"></script>
+</html>
